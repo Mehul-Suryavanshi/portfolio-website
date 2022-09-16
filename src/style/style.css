@@ -14,11 +14,14 @@ body {
   background-color: var(--primary-color);
   width: 100%;
   max-width: 90%;
+  color: var(--secondary-color);
 }
 
 .container {
   padding: 0rem 1rem;
 }
+
+
 
 .navigation {
   background-color: var(--primary-color);
@@ -27,19 +30,39 @@ body {
   margin: 0.6rem 0rem;
 }
 
-.list-nonbullet {
-  list-style: none;
-}
-
-.list-item-inline {
-  display: inline;
-  margin: 0.6rem 1rem;
-}
-
 .navigation .nav-pills {
   text-align: right;
   font-size: 1.2rem;
 }
+
+
+/* Header */
+
+.hero{
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.hero-img{
+    display: inline;
+    width: 600px;
+    max-width: 60%;
+}
+
+.hero-msg{
+    display: inline-block;
+    margin: 0rem 5rem;
+    /* vertical-align: sub;  */
+}
+
+.list-nonbullet {
+    list-style: none;
+  }
+  
+  .list-item-inline {
+    display: inline-block;
+    margin: 0.6rem 1rem;
+  }
 
 .link {
   box-sizing: border-box;
