@@ -21,7 +21,10 @@ body {
   padding: 0rem 1rem;
 }
 
-
+.container-centered{
+    margin: auto;
+    text-align: center;
+}
 
 .navigation {
   background-color: var(--primary-color);
@@ -30,7 +33,7 @@ body {
   margin: 0.6rem 0rem;
 }
 
-.navigation .nav-pills {
+.nav-pills {
   text-align: right;
   font-size: 1.2rem;
 }
@@ -44,22 +47,23 @@ body {
 }
 
 .hero-img{
-    display: inline;
-    width: 600px;
-    max-width: 60%;
+    display: block;
+    width: 40%;
+    max-width: 650px;
+    margin: auto;
 }
 
 .hero-msg{
-    display: inline-block;
-    margin: 0rem 5rem;
-    /* vertical-align: sub;  */
+    display: block;
+    margin: 5rem auto;
+    text-align: center;
 }
 
 .list-nonbullet {
     list-style: none;
   }
   
-  .list-item-inline {
+.list-item-inline {
     display: inline-block;
     margin: 0.6rem 1rem;
   }
