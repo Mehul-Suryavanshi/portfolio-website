@@ -63,7 +63,7 @@ h1 {
   text-align: center;
 }
 
-.hero-description {
+.fontsize-secondary {
   font-size: 1.3rem;
 }
 
@@ -90,6 +90,35 @@ h1 {
 .link-secondary {
   color: var(--primary-color);
 }
+
+.link-button{
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.section{
+  margin-bottom: 5rem;
+  padding: 0rem 5rem;
+}
+
+.section-img{
+  width: 7rem;
+  max-width: 100%;
+  margin: auto 1rem;
+}
+
+.section ul{
+  padding-left: 0rem;
+}
+
+.section h1{
+  /* margin-bottom: 1rem; */
+  font-size: 1.6rem;
+}
+
+/* This is Footer */
 
 .footer {
   margin-top: 4rem;
