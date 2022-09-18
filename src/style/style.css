@@ -33,9 +33,12 @@ h1 {
 
 .navigation {
   background-color: var(--background-color);
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-  margin: 0.6rem 0rem;
+  padding: 0.3rem 0.5rem;
+  margin-bottom : 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
 }
 
 .nav-pills {
@@ -47,7 +50,7 @@ h1 {
 
 .hero {
   padding: 2rem;
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 
 .hero-img {
@@ -109,6 +112,17 @@ h1 {
   margin: auto 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .section-img {
+    width: 3rem;
+  }
+
+  .section{
+    padding: 0rem 1rem;
+    /* padding: auto; */
+  }
+}
 .section ul{
   padding-left: 0rem;
 }
@@ -122,6 +136,7 @@ h1 {
 
 .footer {
   margin-top: 4rem;
+  background-color: var(--background-color);
 }
 
 .footer ul{
