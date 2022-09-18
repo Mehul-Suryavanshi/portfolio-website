@@ -34,7 +34,7 @@ h1 {
 .navigation {
   background-color: var(--background-color);
   padding: 0.3rem 0.5rem;
-  margin-bottom : 4rem;
+  margin-bottom: 4rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -44,6 +44,7 @@ h1 {
 .nav-pills {
   text-align: right;
   font-size: 1.3rem;
+  padding-right: 2rem;
 }
 
 /* Header */
@@ -94,22 +95,107 @@ h1 {
   color: var(--primary-color);
 }
 
-.link-button{
+.link-button {
   color: var(--primary-color);
   background-color: var(--secondary-color);
   border-radius: 1rem;
   padding: 1rem;
 }
 
-.section{
+.section {
   margin-bottom: 5rem;
   padding: 0rem 5rem;
 }
 
-.section-img{
+.section-img {
   width: 7rem;
   max-width: 100%;
   margin: auto 1rem;
+}
+
+.section ul {
+  padding-left: 0rem;
+}
+
+.section h1 {
+  /* margin-bottom: 1rem; */
+  font-size: 1.6rem;
+}
+
+/* Card */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  max-width: 25rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-description {
+  padding: 2px 16px;
+  text-align: left;
+}
+
+.card img {
+  margin: 1rem auto;
+  width: 90%;
+  padding: 0rem 0.5rem;
+}
+
+.card-button {
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.card-button a {
+  display: inline-block;
+  width: 30%;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+.card-button a:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.pill{
+  border-radius: 1rem;
+  background-color: var(--selected-color);
+  color: var(--secondary-color);
+  padding: 10px;
+}
+/* This is Footer */
+
+.footer {
+  margin-top: 4rem;
+  background-color: var(--background-color);
+}
+
+.footer ul {
+  padding-left: 0px;
+}
+
+.footer-img {
+  width: 100%;
+  max-width: 30px;
+  margin: auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -118,67 +204,12 @@ h1 {
     width: 3rem;
   }
 
-  .section{
+  .section {
     padding: 0rem 1rem;
     /* padding: auto; */
   }
-}
-.section ul{
-  padding-left: 0rem;
-}
 
-.section h1{
-  /* margin-bottom: 1rem; */
-  font-size: 1.6rem;
-}
-
-/* Card */
-.grid-container{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 10px;
-}
-
-.card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  max-width: 25rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
-}
-
-/* Add some padding inside the card container */
-.card-description {
-  padding: 2px 16px;
-  text-align: left;
-}
-
-.card img{
-  /* max-width: 10rem; */
-  width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-/* This is Footer */
-
-.footer {
-  margin-top: 4rem;
-  background-color: var(--background-color);
-}
-
-.footer ul{
-  padding-left: 0px;
-}
-
-.footer-img {
-  width: 100%;
-  max-width: 30px;
-  margin: auto;
+  .grid-container {
+    grid-template-columns:  auto;
+  }
 }
