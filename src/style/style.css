@@ -138,10 +138,11 @@ h1 {
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
+  border-radius: 1rem;
 }
 
 .card:hover {
-  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.6);
 }
 
 .card-description {
@@ -150,17 +151,16 @@ h1 {
 }
 
 .card img {
-  margin: 1rem auto;
-  width: 90%;
-  padding: 0rem 0.5rem;
+  width: 100%;
+  border-radius: 1rem 1rem 0rem 0rem;
 }
 
-.card-button {
+.card-footer {
   padding: 1rem;
   margin-top: auto;
 }
 
-.card-button a {
+.card-footer-link {
   display: inline-block;
   width: 30%;
   text-decoration: none;
@@ -175,11 +175,35 @@ h1 {
   color: var(--background-color);
 }
 
-.pill{
+.pill {
   border-radius: 1rem;
   background-color: var(--selected-color);
   color: var(--secondary-color);
   padding: 10px;
+}
+
+.blog-pill {
+  font-size: small;
+}
+
+.blog-footer-text {
+  text-align: center;
+  font-size: large;
+  font-weight: bolder;
+  padding-bottom: 0px;
+}
+
+/* Blog Pages CSS */
+
+.container-blog{
+  padding: 0rem 20rem;
+  margin: auto;
+  text-align: justify;
+}
+
+.container-blog h1{
+  text-align: center;
+  font-size: xx-large;
 }
 /* This is Footer */
 
@@ -210,6 +234,9 @@ h1 {
   }
 
   .grid-container {
-    grid-template-columns:  auto;
+    grid-template-columns: auto;
+  }
+  .container-blog{
+    padding: 0 1rem;
   }
 }
